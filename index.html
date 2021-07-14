@@ -217,3 +217,56 @@ background-color: aqua;
     }
   
 </style>
+<script>
+  var downloads = []
+ 
+
+  function download(down) {
+    if(down == 'cc') {
+downloads.push(`var ans = null
+ans=prompt('cursor')
+var CursorPNG = ans
+  var cursor = document.createElement('img'); cursor.style.zIndex = 999; cursor.src = CursorPNG; cursor.style.position = 'fixed'; cursor.select = 'none'; cursor.id = 'cursor'; cursor.width = 25; cursor.height = 35; cursor.style.marginLeft = '-100px'; cursor.style.top = '0px'; cursor.style.pointerEvents = "none"; document.body.appendChild(cursor); var elems = document.body.getElementsByTagName("*"); for (var i =0;i<elems.length;i++){ elems[i].style.cursor = 'none'; } var urls = [CursorPNG]; var current = 0; document.onmousemove = function(){ document.getElementById('cursor').style.marginLeft = event.clientX-1 + 'px'; document.getElementById('cursor').style.marginTop = event.clientY-15 + 'px'; }; function change(){ current++; if (current>urls.length){ current = 0; } document.getElementById('cursor').src = urls[current]; } `)
+    var num123 =  AppNames.length
+    
+   
+   
+AppNames.push('custom cursors')
+document.getElementById(num123).innerHTML = 'custom cursors'
+document.getElementById(num123).style.visibility = "visible";
+
+
+}
+if(down == 'sps') {
+  
+downloads.push(` document.getElementById("Window").style.display = "block"; document.getElementById("winCon").innerHTML = '<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src="https://jackb0back.github.io/WebLetOS-apps1234/sps.html"></iframe>' `)
+
+    var num123 =  AppNames.length
+    
+   
+   
+AppNames.push('space shooter')
+document.getElementById(num123).innerHTML = 'space shooter'
+document.getElementById(num123).style.visibility = "visible";
+
+
+}
+if(down == 'draw') {
+  
+  downloads.push(` document.getElementById("Window").style.display = "block"; document.getElementById("winCon").innerHTML = '<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src="https://jackb0back.github.io/WebLetOS-apps1234/draw.html"></iframe>' `)
+
+  
+      var num123 =  AppNames.length
+      
+     
+     
+  AppNames.push('draw')
+  document.getElementById(num123).innerHTML = 'draw'
+  document.getElementById(num123).style.visibility = "visible";
+  
+  
+  }
+  }
+
+  
+</script>
